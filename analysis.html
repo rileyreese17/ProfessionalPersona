@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Analysis · Riley Reese</title>
+  <meta name="description" content="A Claim-Evidence-Reasoning analysis of Riley Reese's identity and reputation, drawn from Radian SPI, PRS, and 360 assessments, written for a law school admissions audience." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="inner">
+
+  <!-- ===== NAVIGATION ===== -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__brand" aria-label="Riley Reese, home">
+        <span class="nav__monogram">RR</span>
+        <span class="nav__name">Riley Reese</span>
+      </a>
+
+      <nav class="nav__links" id="navLinks" aria-label="Primary">
+        <a href="biography.html">Biography</a>
+        <a href="resume.html">Resume</a>
+        <a href="video.html">Video</a>
+        <a href="analysis.html" class="is-active" aria-current="page">Analysis</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html" class="nav__cta">Contact</a>
+      </nav>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section section--alt" id="analysis">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__kicker">4 · Professional Evolution Analysis</span>
+          <h2 class="section__title">Identity &amp; Reputation, Aligned</h2>
+        </div>
+
+        <!-- Data source note -->
+        <div class="callout reveal" role="note">
+          <strong>Data:</strong> drawn from my <strong>Radian</strong> assessments. These
+          include the <abbr title="Self-Perception Inventory">SPI</abbr> (identity), the
+          <abbr title="Professional Reputation Survey">PRS</abbr> from 8 reviewers
+          (reputation), and my 360° reports.
+        </div>
+
+        <!-- Introduction / value proposition -->
+        <div class="analysis__intro reveal">
+          <h3>The Introduction</h3>
+          <p>
+            <strong>A law school admissions committee wants to know more than what an
+            applicant has done. It wants to know who the person is under pressure, over
+            time.</strong> This analysis answers that with evidence. My Self-Perception
+            Inventory shows how I see myself; eight Professional Reputation Survey
+            reviewers and my 360° reports show how others see me. Side by side, they test
+            whether those two pictures match, across my communication style, my work
+            preferences, and the words people use to describe me. Where they agree, I
+            treat it as a confirmed strength. Where they differ, that gap is what my
+            brand strategy works on. The result is a law applicant whose self-knowledge
+            is backed by data rather than assumed.
+          </p>
+        </div>
+
+        <!-- Word map: what people call me (PRS adjectives by frequency) -->
+        <figure class="wordmap reveal">
+          <figcaption class="chart-card__cap">
+            <h4>What People Call Me</h4>
+            <p>The words my 8 reviewers reached for most. Bigger means more of them chose it; gold marks the words I also use for myself.</p>
+          </figcaption>
+          <div class="wordmap__cloud" role="img" aria-label="Word cloud of the adjectives my reviewers used most. Most frequent: hard-working, outgoing, and social. Then problem-solver, competitive, driven, entertaining, even-tempered, good with numbers, and self-confident.">
+            <span class="wm wm--self" style="font-size:2.05rem">Social</span>
+            <span class="wm" style="font-size:2.05rem">Hard-Working</span>
+            <span class="wm" style="font-size:1.7rem">Problem-Solver</span>
+            <span class="wm" style="font-size:2.05rem">Outgoing</span>
+            <span class="wm wm--self" style="font-size:1.45rem">Driven</span>
+            <span class="wm" style="font-size:1.45rem">Even-Tempered</span>
+            <span class="wm wm--self" style="font-size:1.45rem">Self-Confident</span>
+            <span class="wm" style="font-size:1.45rem">Good with Numbers</span>
+            <span class="wm wm--self" style="font-size:1.45rem">Competitive</span>
+            <span class="wm wm--self" style="font-size:1.45rem">Entertaining</span>
+            <span class="wm" style="font-size:1.2rem">Caring</span>
+            <span class="wm" style="font-size:1.2rem">Adventurous</span>
+            <span class="wm" style="font-size:1.2rem">Well-Informed</span>
+            <span class="wm" style="font-size:1.2rem">Risk-Taker</span>
+          </div>
+          <p class="wordmap__legend"><span class="wm--self">Gold</span> = words I also use for myself · <span class="wm--navy">Navy</span> = added by my reviewers</p>
+        </figure>
+
+        <!-- Overview chart: Social Styles quadrant -->
+        <figure class="chart-card reveal">
+          <figcaption class="chart-card__cap">
+            <h4>Communication Style: Identity vs. Reputation</h4>
+            <p>Where my self-perception (SPI) and my 8 reviewers (PRS) place me on the Social Styles map. Axes run −9 to +9.</p>
+          </figcaption>
+          <div class="chart" id="chart-radar" role="img"
+               aria-label="Quadrant scatter of Social Styles. Self-perception sits in the Driver quadrant at proactivity 2.0, reactivity negative 3.0; reviewers place me in the Expressive quadrant at proactivity 4.8, reactivity 0.5."></div>
+          <div class="chart-legend" id="legend-radar"></div>
+        </figure>
+
+        <!-- ===== CER Block A: Communication Style ===== -->
+        <article class="cer reveal">
+          <div class="cer__tag">Communication Style</div>
+          <h3 class="cer__claim">I See a Driver; My Reviewers See an Expressive</h3>
+
+          <div class="cer__grid">
+            <div class="cer__evidence">
+              <h4 class="cer__label"><span>Evidence</span> The Data</h4>
+              <figure class="chart-card chart-card--inset">
+                <div class="chart" id="chart-comm" role="img"
+                     aria-label="Grouped bar chart comparing my self-rated and reviewer-rated composite proactivity and reactivity."></div>
+                <div class="chart-legend" id="legend-comm"></div>
+              </figure>
+              <p class="cer__source">Source: SPI attitudinal style (self) &amp; PRS behavioral style, n=8 (others).</p>
+            </div>
+
+            <div class="cer__reasoning">
+              <h4 class="cer__label"><span>Reasoning</span> The Why &amp; Brand Strategy</h4>
+              <p>
+                On my SPI I come out as a <strong>Driver</strong>, with proactivity at
+                2.0 and reactivity at −3.0: decisive, task-focused, and reserved with
+                emotion. My eight reviewers see an <strong>Expressive</strong>. In their
+                eyes my proactivity climbs to 4.8 and my reactivity to 0.5, which puts me
+                in the warm, high-energy quadrant. They read me as far more outgoing and
+                emotionally present than I give myself credit for.
+              </p>
+              <p>
+                <strong>Brand strategy:</strong> the gap works in my favor, so I use it. I
+                keep the Driver's focus and decisiveness while leaning on the warmth and
+                energy other people already see in me. For a law school audience it comes
+                down to one idea: <em>I can argue decisively and still connect with the
+                room.</em>
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <!-- ===== CER Block B: Core Values · Work Preferences ===== -->
+        <article class="cer reveal">
+          <div class="cer__tag">Core Values · Work Preferences</div>
+          <h3 class="cer__claim">Built for Debate, Clear Structure, and Strong Relationships</h3>
+
+          <div class="cer__grid">
+            <div class="cer__evidence">
+              <h4 class="cer__label"><span>Evidence</span> The Data</h4>
+              <figure class="chart-card chart-card--inset">
+                <div class="chart" id="chart-values" role="img"
+                     aria-label="Bar chart of my Work Environment Preference scores, highest for debate, hierarchy and relationships, lowest for conflict."></div>
+                <div class="chart-legend" id="legend-values"></div>
+              </figure>
+              <p class="cer__source">Source: SPI Work Environment Preferences (0 to 4); motivator: Financial Interest; team role: Pragmatism.</p>
+            </div>
+
+            <div class="cer__reasoning">
+              <h4 class="cer__label"><span>Reasoning</span> The Why &amp; Brand Strategy</h4>
+              <p>
+                My work preferences peak on <strong>Debate</strong>,
+                <strong>Hierarchy</strong>, and <strong>Relationships</strong> (2.67 each)
+                and bottom out on <strong>Conflict</strong> (1.00). I do my best work
+                where ideas get argued openly, inside a clear structure, among people I
+                trust. When I push, I push on the <em>issue</em> rather than the person.
+              </p>
+              <p>
+                <strong>Brand strategy:</strong> that profile fits the law almost exactly.
+                The field is adversarial, runs on rules, and depends on relationships. So
+                my story is a <em>pragmatic debater</em> (my preferred team role is
+                Pragmatism) who argues hard but stays respectful, and who pairs a
+                competitive streak with a low appetite for personal conflict.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <!-- ===== CER Block C: Identity-Reputation Alignment (defined insight) ===== -->
+        <article class="cer reveal">
+          <div class="cer__tag">Defined Insight · Identity-Reputation Alignment</div>
+          <h3 class="cer__claim">Others Credit Me with Competence I Don't Always Claim</h3>
+
+          <div class="cer__grid">
+            <div class="cer__evidence">
+              <h4 class="cer__label"><span>Evidence</span> The Data</h4>
+              <figure class="chart-card chart-card--inset">
+                <div class="chart" id="chart-growth" role="img"
+                     aria-label="Bar chart of the adjectives my eight reviewers used most, with the ones I also chose for myself highlighted."></div>
+                <div class="chart-legend" id="legend-growth"></div>
+              </figure>
+              <p class="cer__source">Source: PRS adjectives (count of 8 reviewers); highlighted bars are words I also chose on my SPI.</p>
+            </div>
+
+            <div class="cer__reasoning">
+              <h4 class="cer__label"><span>Reasoning</span> The Why &amp; Brand Strategy</h4>
+              <p>
+                I describe myself as <strong>Competitive, Driven, Social, Self-Confident</strong>,
+                and my reviewers agree: <strong>Social</strong> and <strong>Self-Confident</strong>
+                are among the words they use most. What they add are the traits I tend to
+                leave off my own list. <strong>Hard-Working (7 of 8)</strong>,
+                <strong>Problem-Solver (6)</strong>, <strong>Good with Numbers (5)</strong>,
+                and <strong>Even-Tempered (5)</strong> point to diligence, analytical
+                skill, and composure I'm slow to claim.
+              </p>
+              <p>
+                <strong>Brand strategy:</strong> the overlap shows my self-image is honest,
+                and the additions are credibility I didn't have to claim for myself. So I
+                build "a hard-working, even-tempered problem-solver who's good with
+                numbers" into how I present myself. That's the rigor and composure a law
+                school looks for, and it carries more weight coming from other people than
+                from me. The even temper also backs up my low appetite for conflict: I
+                press hard on the issue without making it personal.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Conclusion -->
+        <div class="analysis__conclusion reveal">
+          <h3>The Conclusion</h3>
+          <p>
+            Identity and reputation share a confident, high-drive core. Where they differ,
+            my eight reviewers go further than I do: I see a reserved <strong>Driver</strong>,
+            while they see an outgoing <strong>Expressive</strong> who is hard-working, a
+            problem-solver, and good with numbers. My Radian brand keywords sum it up: a
+            <em>"highly ambitious, competent, socially adept leader with clear focus."</em>
+          </p>
+          <div class="takeaways">
+            <div class="takeaway">
+              <span class="takeaway__num">1</span>
+              <p><strong>Key takeaway:</strong> my reputation backs up my identity, and adds a credible layer of diligence and analytical competence on top of it.</p>
+            </div>
+            <div class="takeaway">
+              <span class="takeaway__num">2</span>
+              <p><strong>The advocacy fit:</strong> I'm at my best where ideas get argued openly inside a clear structure. Debate, Hierarchy, and Relationships rank highest in my preferences, and I stay even-tempered enough to keep it about the issue rather than the person.</p>
+            </div>
+            <div class="takeaway">
+              <span class="takeaway__num">3</span>
+              <p><strong>The goal:</strong> arrive at law school as a self-aware advocate whose record is documented, a pragmatic debater with decisive presence.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span class="footer__brand">Riley Reese</span>
+      <span class="footer__note">University of Arizona · Eller College of Management</span>
+      <span class="footer__copy">&copy; <span id="year"></span> Riley Reese. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Biography · Riley Reese</title>
+  <meta name="description" content="Biography of Riley Reese, a Business Economics student at the University of Arizona's Eller College of Management preparing for law school." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="inner">
+
+  <!-- ===== NAVIGATION ===== -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__brand" aria-label="Riley Reese, home">
+        <span class="nav__monogram">RR</span>
+        <span class="nav__name">Riley Reese</span>
+      </a>
+
+      <nav class="nav__links" id="navLinks" aria-label="Primary">
+        <a href="biography.html" class="is-active" aria-current="page">Biography</a>
+        <a href="resume.html">Resume</a>
+        <a href="video.html">Video</a>
+        <a href="analysis.html">Analysis</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html" class="nav__cta">Contact</a>
+      </nav>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" id="bio">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__kicker">1 · Professional Biography</span>
+          <h2 class="section__title">Biography</h2>
+        </div>
+
+        <p class="section__intro reveal">A short portrait of where I am now and where I'm headed next.</p>
+
+        <div class="bio">
+          <figure class="bio__photo reveal">
+            <img src="assets/eller.jpg" alt="Eller College of Management at the University of Arizona" />
+            <figcaption>Eller College of Management · Tucson, AZ</figcaption>
+          </figure>
+
+          <div class="bio__text reveal">
+            <p class="bio__lead">
+              I'm a Business Economics student at the University of Arizona's Eller
+              College of Management, preparing for law school. My view of good advocacy
+              is simple: it starts with careful analysis and clear communication, and it
+              holds up because of integrity.
+            </p>
+            <p>
+              My background combines quantitative business training with hands-on work.
+              As a logistics intern, I led a nationwide operational analysis and brought
+              cost-saving recommendations to senior management. Earlier jobs in service
+              taught me to listen before acting and to solve problems under pressure,
+              with the kind of follow-through that earns trust. Those habits of rigor and
+              reliability carry into everything I take on.
+            </p>
+            <p>
+              I built this portfolio for a law school admissions reader, so it does more
+              than list accomplishments. It shows how I see myself, how others see me,
+              and how I'm bringing those two views into line as I head toward law.
+            </p>
+            <ul class="bio__chips">
+              <li>Analytical &amp; evidence-driven</li>
+              <li>Clear, persuasive communicator</li>
+              <li>Service-oriented leader</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span class="footer__brand">Riley Reese</span>
+      <span class="footer__note">University of Arizona · Eller College of Management</span>
+      <span class="footer__copy">&copy; <span id="year"></span> Riley Reese. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

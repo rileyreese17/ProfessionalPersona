@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact · Riley Reese</title>
+  <meta name="description" content="Get in touch with Riley Reese, Business Economics student at the University of Arizona's Eller College of Management." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="inner">
+
+  <!-- ===== NAVIGATION ===== -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__brand" aria-label="Riley Reese, home">
+        <span class="nav__monogram">RR</span>
+        <span class="nav__name">Riley Reese</span>
+      </a>
+
+      <nav class="nav__links" id="navLinks" aria-label="Primary">
+        <a href="biography.html">Biography</a>
+        <a href="resume.html">Resume</a>
+        <a href="video.html">Video</a>
+        <a href="analysis.html">Analysis</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html" class="nav__cta" aria-current="page">Contact</a>
+      </nav>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section section--contact" id="contact">
+      <div class="container">
+        <div class="section__head section__head--center reveal">
+          <span class="section__kicker section__kicker--light">6 · Contact</span>
+          <h2 class="section__title section__title--light">Contact &amp; Professional Presence</h2>
+          <p class="contact__intro reveal">
+            I'm glad to talk about my background, this analysis, or where I'm headed in
+            the law. The quickest ways to reach me are below.
+          </p>
+        </div>
+
+        <div class="contact__layout">
+          <!-- Direct links -->
+          <div class="contact__links reveal">
+            <a class="contact__item" href="https://www.linkedin.com/in/rileyreese17" target="_blank" rel="noopener">
+              <span class="contact__label">LinkedIn</span>
+              <span class="contact__value">/in/rileyreese17</span>
+            </a>
+            <a class="contact__item" href="mailto:rileyr1@arizona.edu">
+              <span class="contact__label">Email</span>
+              <span class="contact__value">rileyr1@arizona.edu</span>
+            </a>
+            <div class="contact__item contact__item--static">
+              <span class="contact__label">Institution</span>
+              <span class="contact__value">U. of Arizona · Eller College</span>
+            </div>
+          </div>
+
+          <!-- Contact form (opens the visitor's email client; no data leaves the page) -->
+          <form class="contact__form reveal" id="contactForm" novalidate>
+            <h3>Send a message</h3>
+            <div class="field">
+              <label for="cf-name">Name</label>
+              <input type="text" id="cf-name" name="name" autocomplete="name" required />
+            </div>
+            <div class="field">
+              <label for="cf-email">Your email</label>
+              <input type="email" id="cf-email" name="email" autocomplete="email" required />
+            </div>
+            <div class="field">
+              <label for="cf-message">Message</label>
+              <textarea id="cf-message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn--gold">Compose Email</button>
+            <p class="contact__form-note" id="cfNote">This opens your email app with the message pre-filled. The site doesn't send or store anything.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span class="footer__brand">Riley Reese</span>
+      <span class="footer__note">University of Arizona · Eller College of Management</span>
+      <span class="footer__copy">&copy; <span id="year"></span> Riley Reese. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

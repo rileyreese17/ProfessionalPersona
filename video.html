@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Persona Video · Riley Reese</title>
+  <meta name="description" content="A short professional persona video introduction from Riley Reese." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="inner">
+
+  <!-- ===== NAVIGATION ===== -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__brand" aria-label="Riley Reese, home">
+        <span class="nav__monogram">RR</span>
+        <span class="nav__name">Riley Reese</span>
+      </a>
+
+      <nav class="nav__links" id="navLinks" aria-label="Primary">
+        <a href="biography.html">Biography</a>
+        <a href="resume.html">Resume</a>
+        <a href="video.html" class="is-active" aria-current="page">Video</a>
+        <a href="analysis.html">Analysis</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html" class="nav__cta">Contact</a>
+      </nav>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" id="video">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__kicker">3 · Professional Persona</span>
+          <h2 class="section__title">Persona Video</h2>
+        </div>
+
+        <p class="section__intro reveal">
+          A short introduction in my own voice. It's the quickest way to hear how I
+          communicate and why I'm drawn to the law.
+        </p>
+
+        <div class="video reveal">
+          <div class="video__frame">
+            <!-- VIDEO EMBED:
+                 Replace the placeholder below with your embed, e.g.:
+                 <iframe src="https://www.youtube.com/embed/VIDEO_ID"
+                         title="Riley Reese, Professional Persona Video"
+                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                         allowfullscreen></iframe>
+                 (For Vimeo: https://player.vimeo.com/video/VIDEO_ID) -->
+            <div class="video__placeholder" role="img" aria-label="Persona video, coming soon">
+              <span class="video__play" aria-hidden="true">&#9658;</span>
+              <span class="video__placeholder-title">Persona video</span>
+              <span class="video__placeholder-note">A short introduction in my own voice, coming soon.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span class="footer__brand">Riley Reese</span>
+      <span class="footer__note">University of Arizona · Eller College of Management</span>
+      <span class="footer__copy">&copy; <span id="year"></span> Riley Reese. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

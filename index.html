@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Riley Reese · Professional Persona Portfolio | University of Arizona</title>
+  <meta name="description" content="Riley Reese is a Business Economics student at the University of Arizona's Eller College of Management. This professional persona portfolio includes a biography, resume, persona video, and a Claim-Evidence-Reasoning analysis of identity and reputation, written for a law school admissions audience." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Riley Reese · Professional Persona Portfolio" />
+  <meta property="og:description" content="Business Economics student at the University of Arizona's Eller College of Management, preparing for a career in law." />
+  <meta property="og:type" content="website" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__brand" aria-label="Riley Reese, home">
+        <span class="nav__monogram">RR</span>
+        <span class="nav__name">Riley Reese</span>
+      </a>
+
+      <nav class="nav__links" id="navLinks" aria-label="Primary">
+        <a href="biography.html">Biography</a>
+        <a href="resume.html">Resume</a>
+        <a href="video.html">Video</a>
+        <a href="analysis.html">Analysis</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html" class="nav__cta">Contact</a>
+      </nav>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="top">
+    <div class="hero__bg" aria-hidden="true"></div>
+    <div class="hero__inner">
+      <div class="hero__copy">
+        <p class="hero__eyebrow reveal">Professional Persona Portfolio</p>
+        <h1 class="hero__title reveal">Riley Reese</h1>
+        <p class="hero__lede reveal">
+          Business Economics student at the <strong>Eller College of Management</strong>,
+          preparing for law school. I lead with careful analysis and a service-minded
+          way of working.
+        </p>
+        <div class="hero__actions reveal">
+          <a href="analysis.html" class="btn btn--gold">View the Analysis</a>
+          <a href="contact.html" class="btn btn--ghost">Get in Touch</a>
+        </div>
+        <ul class="hero__facts reveal" aria-label="Quick facts">
+          <li><span class="hero__fact-num">3.65</span><span class="hero__fact-label">GPA</span></li>
+          <li><span class="hero__fact-num">2027</span><span class="hero__fact-label">Expected Graduation</span></li>
+          <li><span class="hero__fact-num">3×</span><span class="hero__fact-label">Dean's List Honors</span></li>
+        </ul>
+      </div>
+      <figure class="hero__photo reveal" data-delay="150">
+        <img src="assets/headshot.jpg" alt="Riley Reese, professional headshot" />
+      </figure>
+    </div>
+    <a href="#explore" class="hero__scroll" aria-label="Explore the portfolio"><span></span></a>
+  </section>
+
+  <!-- ===== EXPLORE (section preview cards) ===== -->
+  <section class="section" id="explore">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="section__kicker">Explore</span>
+        <h2 class="section__title">Inside the Portfolio</h2>
+      </div>
+
+      <div class="pillars">
+        <a class="pillar reveal" href="biography.html">
+          <h3>Biography</h3>
+          <p>Who I am, and the path from business analysis toward the law.</p>
+        </a>
+        <a class="pillar reveal" href="resume.html">
+          <h3>Resume</h3>
+          <p>Education, experience, and the skills behind the work.</p>
+        </a>
+        <a class="pillar reveal" href="video.html">
+          <h3>Persona Video</h3>
+          <p>A short introduction in my own voice.</p>
+        </a>
+        <a class="pillar reveal" href="analysis.html">
+          <h3>Analysis</h3>
+          <p>Identity versus reputation, backed by Radian assessment data.</p>
+        </a>
+        <a class="pillar reveal" href="portfolio.html">
+          <h3>Portfolio</h3>
+          <p>Work samples, a regression report, and Tableau visualizations.</p>
+        </a>
+        <a class="pillar reveal" href="contact.html">
+          <h3>Contact</h3>
+          <p>The quickest ways to reach me.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span class="footer__brand">Riley Reese</span>
+      <span class="footer__note">University of Arizona · Eller College of Management</span>
+      <span class="footer__copy">&copy; <span id="year"></span> Riley Reese. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
