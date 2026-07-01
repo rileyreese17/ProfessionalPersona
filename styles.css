@@ -196,7 +196,7 @@ body.inner .nav__toggle span { background: var(--navy); }
 .hero__copy { min-width: 0; }
 .hero__photo { margin: 0; justify-self: end; }
 .hero__photo img {
-  width: 100%; max-width: 340px; display: block;
+  width: 100%; max-width: 380px; display: block;
   border-radius: var(--radius); box-shadow: var(--shadow-md);
   border: 1px solid rgba(255, 255, 255, 0.14);
 }
