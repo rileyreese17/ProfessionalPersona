@@ -599,6 +599,18 @@ a.contact__item:hover { background: rgba(184, 134, 11, 0.12); border-color: var(
   padding: 8px 16px; border-radius: 30px; font-size: 0.85rem; font-weight: 500;
 }
 
+.involvement { margin-top: 60px; padding-top: 40px; border-top: 1px solid var(--line); }
+.involvement__list { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 6px; list-style: none; padding: 0; }
+.involvement__list li {
+  display: inline-flex; align-items: center; gap: 10px;
+  background: var(--cream); border: 1px solid var(--line); color: var(--navy);
+  padding: 12px 22px; border-radius: 30px; font-size: 0.95rem; font-weight: 500;
+}
+.involvement__list li::before {
+  content: ""; width: 7px; height: 7px; border-radius: 50%;
+  background: var(--gold); flex: none;
+}
+
 /* ---------- Resume ---------- */
 .resume { background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow-sm); padding: 46px 48px; }
 .resume__header { padding-bottom: 22px; border-bottom: 2px solid var(--navy); margin-bottom: 8px; }
