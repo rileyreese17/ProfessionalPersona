@@ -69,34 +69,6 @@
           </p>
         </div>
 
-        <!-- Overview visuals: word map + communication-style chart, side by side -->
-        <div class="analysis__viz">
-        <!-- Word map: what people call me (PRS adjectives by frequency) -->
-        <figure class="wordmap reveal">
-          <figcaption class="chart-card__cap">
-            <h4>What People Call Me</h4>
-            <p>The words my 8 reviewers reached for most. Bigger means more of them chose it; gold marks the words I also use for myself.</p>
-          </figcaption>
-          <div class="wordmap__cloud" role="img" aria-label="Word cloud of the adjectives my reviewers used most. Most frequent: hard-working, outgoing, and social. Then problem-solver, competitive, driven, entertaining, even-tempered, good with numbers, and self-confident.">
-            <span class="wm wm--self" style="font-size:2.05rem">Social</span>
-            <span class="wm" style="font-size:2.05rem">Hard-Working</span>
-            <span class="wm" style="font-size:1.7rem">Problem-Solver</span>
-            <span class="wm" style="font-size:2.05rem">Outgoing</span>
-            <span class="wm wm--self" style="font-size:1.45rem">Driven</span>
-            <span class="wm" style="font-size:1.45rem">Even-Tempered</span>
-            <span class="wm wm--self" style="font-size:1.45rem">Self-Confident</span>
-            <span class="wm" style="font-size:1.45rem">Good with Numbers</span>
-            <span class="wm wm--self" style="font-size:1.45rem">Competitive</span>
-            <span class="wm wm--self" style="font-size:1.45rem">Entertaining</span>
-            <span class="wm" style="font-size:1.2rem">Caring</span>
-            <span class="wm" style="font-size:1.2rem">Adventurous</span>
-            <span class="wm" style="font-size:1.2rem">Well-Informed</span>
-            <span class="wm" style="font-size:1.2rem">Risk-Taker</span>
-          </div>
-          <p class="wordmap__legend"><span class="wm--self">Gold</span> = words I also use for myself · <span class="wm--navy">Navy</span> = added by my reviewers</p>
-          <a class="wordmap__link" href="#reviewer-strengths">See the full breakdown, with reviewer counts &#8595;</a>
-        </figure>
-
         <!-- Overview chart: Social Styles quadrant -->
         <figure class="chart-card reveal">
           <figcaption class="chart-card__cap">
@@ -107,7 +79,6 @@
                aria-label="Quadrant scatter of Social Styles. Self-perception sits in the Driver quadrant at proactivity 2.0, reactivity negative 3.0; reviewers place me in the Expressive quadrant at proactivity 4.8, reactivity 0.5."></div>
           <div class="chart-legend" id="legend-radar"></div>
         </figure>
-        </div>
 
         <!-- ===== CER Block A: Communication Style ===== -->
         <article class="cer reveal">
@@ -149,35 +120,60 @@
         <!-- ===== CER Block B: Core Values · Work Preferences ===== -->
         <article class="cer reveal">
           <div class="cer__tag">Core Values · Work Preferences</div>
-          <h3 class="cer__claim">Built for Debate, Clear Structure, and Strong Relationships</h3>
+          <h3 class="cer__claim">Built for Debate, Grounded in Relationships</h3>
 
           <div class="cer__grid">
             <div class="cer__evidence">
               <h4 class="cer__label"><span>Evidence</span> The Data</h4>
               <figure class="chart-card chart-card--inset">
-                <div class="chart" id="chart-values" role="img"
-                     aria-label="Bar chart of my Work Environment Preference scores, highest for debate, hierarchy and relationships, lowest for conflict."></div>
-                <div class="chart-legend" id="legend-values"></div>
+                <figcaption class="chart-card__cap">
+                  <h4>My Top Work Preferences</h4>
+                  <p>Where I score highest on my Work Environment Preferences, out of 4.</p>
+                </figcaption>
+                <div class="gauges">
+                  <figure class="gauge">
+                    <svg class="gauge__svg" viewBox="0 0 140 140" role="img" aria-label="Debate preference, 2.67 out of 4">
+                      <circle class="gauge__track" cx="70" cy="70" r="54"></circle>
+                      <circle class="gauge__fill gauge__fill--navy" cx="70" cy="70" r="54" transform="rotate(-90 70 70)"></circle>
+                      <text class="gauge__val" x="70" y="68" text-anchor="middle">2.67</text>
+                      <text class="gauge__unit" x="70" y="88" text-anchor="middle">of 4</text>
+                    </svg>
+                    <figcaption class="gauge__name">Debate</figcaption>
+                  </figure>
+                  <figure class="gauge">
+                    <svg class="gauge__svg" viewBox="0 0 140 140" role="img" aria-label="Relationships preference, 2.67 out of 4">
+                      <circle class="gauge__track" cx="70" cy="70" r="54"></circle>
+                      <circle class="gauge__fill gauge__fill--gold" cx="70" cy="70" r="54" transform="rotate(-90 70 70)"></circle>
+                      <text class="gauge__val" x="70" y="68" text-anchor="middle">2.67</text>
+                      <text class="gauge__unit" x="70" y="88" text-anchor="middle">of 4</text>
+                    </svg>
+                    <figcaption class="gauge__name">Relationships</figcaption>
+                  </figure>
+                </div>
+                <p class="gauges__note">Debate and Relationships tie as my two highest, both 2.67 of 4. My lowest is Conflict, at 1.0.</p>
               </figure>
-              <p class="cer__source">Source: SPI Work Environment Preferences (0 to 4); motivator: Financial Interest; team role: Pragmatism.</p>
+              <p class="cer__source">Source: SPI Work Environment Preferences (0 to 4).</p>
             </div>
 
             <div class="cer__reasoning">
               <h4 class="cer__label"><span>Reasoning</span> The Why &amp; Brand Strategy</h4>
               <p>
-                My work preferences peak on <strong>Debate</strong>,
-                <strong>Hierarchy</strong>, and <strong>Relationships</strong> (2.67 each)
-                and sit lowest on <strong>Conflict</strong> (1.00). I do my best work when
-                ideas get argued out in the open, inside a clear structure, around people
-                I trust. When I push, I push on the <em>issue</em> and not the person.
+                My two highest work-environment preferences are <strong>Debate</strong> and
+                <strong>Relationships</strong>, both 2.67 out of 4, and my lowest is
+                <strong>Conflict</strong> at 1.0. That is the mix I work best in. I like
+                ideas argued out in the open, but I care about the people I am arguing with.
+                When I push, I push on the idea and not the person.
               </p>
               <p>
-                <strong>Brand strategy:</strong> That lines up with law almost exactly.
-                The field argues for a living, runs on rules, and depends on
-                relationships. So this is where I am at my strongest: a
-                <em>pragmatic debater</em> (my team role even comes out as Pragmatism) who
-                argues hard but stays respectful, and who is competitive without needing
-                to make it personal.
+                <strong>Brand strategy:</strong> I am living this out right now. This summer
+                I am studying abroad in Rome for five weeks, and the work moves fast. I have
+                had to make calls quickly and hold my own in group discussions, and at the
+                same time I have built real friendships with the people in my group that I
+                plan to keep. Arguing a point hard and keeping the relationship strong is the
+                same thing a lawyer does. You represent your side as well as you can, then
+                stay on good terms with the people across the table. That balance between
+                debate and relationships is where I am at my best, and it is the one the law
+                runs on.
               </p>
             </div>
           </div>
@@ -191,12 +187,30 @@
           <div class="cer__grid">
             <div class="cer__evidence">
               <h4 class="cer__label"><span>Evidence</span> The Data</h4>
-              <figure class="chart-card chart-card--inset">
-                <div class="chart" id="chart-growth" role="img"
-                     aria-label="Bar chart of the adjectives my eight reviewers used most, with the ones I also chose for myself highlighted."></div>
-                <div class="chart-legend" id="legend-growth"></div>
+              <figure class="wordmap wordmap--inset">
+                <figcaption class="chart-card__cap">
+                  <h4>What People Call Me</h4>
+                  <p>The words my 8 reviewers reached for most. Bigger means more of them chose it; gold marks the words I also use for myself.</p>
+                </figcaption>
+                <div class="wordmap__cloud" role="img" aria-label="Word cloud of the adjectives my reviewers used most. Most frequent: hard-working, outgoing, and social. Then problem-solver, competitive, driven, entertaining, even-tempered, good with numbers, and self-confident.">
+                  <span class="wm wm--self" style="font-size:2.05rem">Social</span>
+                  <span class="wm" style="font-size:2.05rem">Hard-Working</span>
+                  <span class="wm" style="font-size:1.7rem">Problem-Solver</span>
+                  <span class="wm" style="font-size:2.05rem">Outgoing</span>
+                  <span class="wm wm--self" style="font-size:1.45rem">Driven</span>
+                  <span class="wm" style="font-size:1.45rem">Even-Tempered</span>
+                  <span class="wm wm--self" style="font-size:1.45rem">Self-Confident</span>
+                  <span class="wm" style="font-size:1.45rem">Good with Numbers</span>
+                  <span class="wm wm--self" style="font-size:1.45rem">Competitive</span>
+                  <span class="wm wm--self" style="font-size:1.45rem">Entertaining</span>
+                  <span class="wm" style="font-size:1.2rem">Caring</span>
+                  <span class="wm" style="font-size:1.2rem">Adventurous</span>
+                  <span class="wm" style="font-size:1.2rem">Well-Informed</span>
+                  <span class="wm" style="font-size:1.2rem">Risk-Taker</span>
+                </div>
+                <p class="wordmap__legend"><span class="wm--self">Gold</span> = words I also use for myself · <span class="wm--navy">Navy</span> = added by my reviewers</p>
               </figure>
-              <p class="cer__source">Source: PRS adjectives (count of 8 reviewers); highlighted bars are words I also chose on my SPI.</p>
+              <p class="cer__source">Source: PRS adjectives from my 8 reviewers; gold words are ones I also chose on my SPI.</p>
             </div>
 
             <div class="cer__reasoning">

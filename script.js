@@ -209,8 +209,6 @@
   function renderCharts() {
     renderQuadrant("chart-radar", "legend-radar", ANALYSIS_DATA.quadrant);
     renderBars("chart-comm", "legend-comm", ANALYSIS_DATA.comm);
-    renderBars("chart-values", "legend-values", ANALYSIS_DATA.values);
-    renderBars("chart-growth", "legend-growth", ANALYSIS_DATA.growth);
   }
 
   /* =======================================================
