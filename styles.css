@@ -701,18 +701,14 @@ a.contact__item:hover { background: rgba(184, 134, 11, 0.12); border-color: var(
 /* Word map placed inside a CER evidence column */
 .wordmap--inset { box-shadow: none; background: var(--cream); max-width: none; padding: 20px 22px 16px; margin: 0; }
 
-/* Gauge rings (Work Environment Preferences) */
-.gauges { display: flex; flex-wrap: wrap; justify-content: center; gap: 34px; margin-top: 6px; }
-.gauge { margin: 0; display: flex; flex-direction: column; align-items: center; gap: 10px; }
-.gauge__svg { width: 128px; height: 128px; display: block; }
-.gauge__track { fill: none; stroke: var(--line); stroke-width: 13; }
-.gauge__fill { fill: none; stroke-width: 13; stroke-linecap: round; stroke-dasharray: 226 340; }
-.gauge__fill--navy { stroke: var(--navy); }
-.gauge__fill--gold { stroke: var(--gold); }
-.gauge__val { fill: var(--navy); font-family: var(--serif); font-weight: 700; font-size: 30px; }
-.gauge__unit { fill: var(--muted); font-size: 11px; letter-spacing: 0.06em; }
-.gauge__name { font-family: var(--serif); font-size: 1.15rem; color: var(--navy); font-weight: 600; letter-spacing: 0.01em; }
-.gauges__note { text-align: center; font-size: 0.9rem; color: var(--muted); margin-top: 16px; }
+/* Work-preference highlights (Core Values) */
+.pref-lead { font-size: 0.95rem; color: var(--charcoal); margin: 0 0 14px; }
+.pref-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; }
+.pref-list__item { display: flex; flex-direction: column; gap: 5px; padding: 20px 24px; background: var(--cream); border: 1px solid var(--line); border-left: 3px solid var(--gold); border-radius: var(--radius); }
+.pref-list__item--navy { border-left-color: var(--navy); }
+.pref-list__item--gold { border-left-color: var(--gold); }
+.pref-list__name { font-family: var(--serif); font-size: 1.5rem; font-weight: 700; color: var(--navy); line-height: 1.1; }
+.pref-list__tag { font-size: 0.76rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
 
 /* ---------- CER blocks ---------- */
 .cer { background: var(--paper); border: 1px solid var(--line); border-top: 3px solid var(--gold); border-radius: var(--radius); padding: 34px 38px; margin-top: 28px; box-shadow: var(--shadow-sm); }
