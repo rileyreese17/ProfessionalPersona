@@ -47,7 +47,7 @@
     // gold = I also chose it on my SPI (identity↔reputation overlap)
     growth: {
       categories: ["Hard-Working", "Social", "Self-Confident", "Problem-Solver", "Good w/ #s", "Even-Tempered"],
-      max: 8, steps: 4,
+      max: 8, steps: 4, padB: 64, pctOfMax: true,
       series: [
         { name: "Reviewers (of 8)", color: "navy",
           values: [7, 7, 5, 6, 5, 5],
@@ -94,7 +94,7 @@
   function renderBars(mountId, legendId, cfg) {
     const mount = document.getElementById(mountId);
     if (!mount) return;
-    const W = 600, H = 320, padL = 42, padR = 16, padT = 22, padB = 50;
+    const W = 600, H = 320, padL = 42, padR = 16, padT = 22, padB = cfg.padB || 50;
     const plotW = W - padL - padR, plotH = H - padT - padB;
     const min = cfg.min || 0, max = cfg.max, range = max - min;
     const steps = cfg.steps || 5;
@@ -140,6 +140,14 @@
       const catLbl = svg("text", { x: padL + g * groupW + groupW / 2, y: H - padB + 20, "text-anchor": "middle", "font-size": 10.5, fill: COLORS.charcoal });
       catLbl.textContent = cat;
       root.appendChild(catLbl);
+      // optional: percentage of the max (e.g. 7 of 8 = 88%) under each category
+      if (cfg.pctOfMax) {
+        const base = cfg.pctBase || cfg.max;
+        const pct = Math.round((cfg.series[0].values[g] / base) * 100);
+        const pctLbl = svg("text", { x: padL + g * groupW + groupW / 2, y: H - padB + 36, "text-anchor": "middle", "font-size": 11, fill: COLORS.gold, "font-weight": 700 });
+        pctLbl.textContent = pct + "%";
+        root.appendChild(pctLbl);
+      }
     });
 
     // zero baseline
