@@ -715,7 +715,7 @@ a.contact__item:hover { background: rgba(184, 134, 11, 0.12); border-color: var(
 .peer-stats__label { font-size: 0.88rem; color: var(--charcoal); line-height: 1.35; }
 .peer-stats__label em { color: var(--muted); font-style: normal; }
 .peer-quote { margin: 0 0 12px; padding: 16px 18px; border-left: 3px solid var(--gold); background: rgba(184, 134, 11, 0.06); border-radius: 0 var(--radius) var(--radius) 0; }
-.peer-quote blockquote { margin: 0 0 8px; font-family: var(--serif-alt); font-style: italic; color: var(--navy); font-size: 1.02rem; line-height: 1.5; }
+.peer-quote blockquote { margin: 0 0 8px; font-family: var(--sans); font-style: normal; color: var(--navy); font-size: 1.05rem; line-height: 1.6; }
 .peer-quote figcaption { font-size: 0.76rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
 
 /* ---------- Takeaways ---------- */
