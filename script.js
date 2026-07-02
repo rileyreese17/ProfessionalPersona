@@ -21,8 +21,10 @@
       yLabel: "Reactivity",
       quadrants: { tr: "Expressive", tl: "Amiable", bl: "Analytical", br: "Driver" },
       points: [
-        { name: "Identity (self · SPI)", color: "navy", x: 2.0, y: -3.0 },
-        { name: "Reputation (others · PRS)", color: "gold", x: 4.8, y: 0.5 }
+        { name: "How my 8 survey responders rated me", color: "gold", cloud: true,
+          coords: [[9, 7], [7, -3], [5, 7], [-3, -5], [5, -5], [5, 5], [5, -3], [5, 1]] },
+        { name: "Their average", color: "gold", x: 4.75, y: 0.5, emphasis: true },
+        { name: "How I see myself (SPI)", color: "navy", x: 2.0, y: -3.0, emphasis: true }
       ]
     },
     // Communication composites — self vs others (supports negatives)
@@ -198,7 +200,13 @@
     yt.textContent = "↑ " + cfg.yLabel; root.appendChild(yt);
     // points
     cfg.points.forEach((p) => {
-      root.appendChild(svg("circle", { cx: xOf(p.x), cy: yOf(p.y), r: 7, fill: color(p.color), stroke: "#fff", "stroke-width": 2 }));
+      if (p.cloud) {
+        p.coords.forEach((pt) => {
+          root.appendChild(svg("circle", { cx: xOf(pt[0]), cy: yOf(pt[1]), r: 5, fill: color(p.color), opacity: 0.4 }));
+        });
+      } else {
+        root.appendChild(svg("circle", { cx: xOf(p.x), cy: yOf(p.y), r: 8, fill: color(p.color), stroke: "#fff", "stroke-width": 2 }));
+      }
     });
 
     mount.innerHTML = "";
